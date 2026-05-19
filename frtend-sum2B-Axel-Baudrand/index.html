@@ -1,12 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetCare | Clinica Veterinaria y Tienda</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">VetCare</a>
+
+            <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="registro.html" class="nav-register">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Cuidado veterinario integral para tu mascota</h1>
+                <p>Salud, bienestar y productos de calidad en un solo lugar.</p>
+                <a href="registro.html" class="btn-primary">Agenda tu primera visita</a>
+            </div>
+        </section>
+
+        <section id="servicios" class="section">
+            <div class="section-heading">
+                <span>Servicios</span>
+                <h2>Atencion completa para cada etapa</h2>
+                <p>En VetCare acompanamos a tu mascota con servicios medicos, preventivos y esteticos.</p>
+            </div>
+
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-icon">+</div>
+                    <h3>Consultas Medicas y Diagnostico</h3>
+                    <p>Evaluaciones generales, control de sintomas y orientacion profesional para un diagnostico oportuno.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">C</div>
+                    <h3>Cirugia y Recuperacion</h3>
+                    <p>Procedimientos seguros, seguimiento postoperatorio y planes de recuperacion personalizados.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">V</div>
+                    <h3>Vacunacion y Desparasitacion</h3>
+                    <p>Programas preventivos para proteger a perros, gatos y otras mascotas durante todo el ano.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">G</div>
+                    <h3>Grooming y Estetica</h3>
+                    <p>Banos, cortes, limpieza de oidos y cuidado del pelaje con trato amable y productos adecuados.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="especialidades" class="section section-soft">
+            <div class="section-heading">
+                <span>Especialidades</span>
+                <h2>Pacientes pequenos, grandes cuidados</h2>
+                <p>Nuestro equipo atiende distintas especies con protocolos pensados para sus necesidades.</p>
+            </div>
+
+            <div class="card-grid three-columns">
+                <article class="card">
+                    <div class="card-icon">P</div>
+                    <h3>Perros y gatos</h3>
+                    <p>Medicina preventiva, nutricion, examenes y tratamientos para los companeros mas comunes del hogar.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">A</div>
+                    <h3>Aves y animales exoticos</h3>
+                    <p>Atencion cuidadosa para especies que requieren manejo especializado y ambientes tranquilos.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">C</div>
+                    <h3>Conejos y animales pequenos</h3>
+                    <p>Controles, alimentacion y cuidados para conejos, hamsters, cobayos y otras mascotas pequenas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="equipo" class="section">
+            <div class="section-heading">
+                <span>Nuestro Equipo</span>
+                <h2>Profesionales cercanos y comprometidos</h2>
+                <p>Personas preparadas para entregar confianza, claridad y buen trato en cada visita.</p>
+            </div>
+
+            <div class="card-grid three-columns">
+                <article class="card professional-card">
+                    <div class="avatar">DR</div>
+                    <h3>Dra. Renata Soto</h3>
+                    <p>Medicina general y diagnostico clinico.</p>
+                </article>
+
+                <article class="card professional-card">
+                    <div class="avatar">MT</div>
+                    <h3>Dr. Matias Torres</h3>
+                    <p>Cirugia veterinaria y recuperacion.</p>
+                </article>
+
+                <article class="card professional-card">
+                    <div class="avatar">LC</div>
+                    <h3>Laura Contreras</h3>
+                    <p>Grooming, estetica y bienestar animal.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="testimonios" class="section section-soft">
+            <div class="section-heading">
+                <span>Testimonios</span>
+                <h2>Familias que confian en VetCare</h2>
+            </div>
+
+            <div class="card-grid three-columns">
+                <article class="testimonial">
+                    <p>"Atendieron a mi perrita con mucha paciencia y explicaron todo de forma clara."</p>
+                    <h3>Camila R.</h3>
+                </article>
+
+                <article class="testimonial">
+                    <p>"La vacunacion fue rapida, ordenada y el equipo fue muy amable con mi gato."</p>
+                    <h3>Jorge M.</h3>
+                </article>
+
+                <article class="testimonial">
+                    <p>"El servicio de grooming dejo a mi mascota impecable y tranquila. Muy recomendado."</p>
+                    <h3>Valentina P.</h3>
+                </article>
+            </div>
+        </section>
+
+        <section id="tienda" class="store-banner">
+            <div>
+                <span>Tienda VetCare</span>
+                <h2>Alimentos, accesorios y productos para el cuidado diario</h2>
+            </div>
+            <a href="registro.html" class="btn-secondary">Crear cuenta</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h2>VetCare</h2>
+                <p>Clinica veterinaria y tienda para mascotas. Cuidamos su salud con dedicacion y profesionalismo.</p>
+            </div>
+
+            <div>
+                <h3>Horarios</h3>
+                <p>Lunes a viernes: 09:00 a 19:00</p>
+                <p>Sabado: 10:00 a 14:00</p>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <p>Av. Los Aromos 1234, Santiago</p>
+                <p>contacto@vetcare.cl</p>
+                <p>+56 2 2345 6789</p>
+                <p>WhatsApp: +56 9 8765 4321</p>
+            </div>
+
+            <div>
+                <h3>Redes sociales</h3>
+                <p>Instagram: @vetcare_cl</p>
+                <p>Facebook: VetCare Chile</p>
+                <p>TikTok: @vetcaremascotas</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 VetCare. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
