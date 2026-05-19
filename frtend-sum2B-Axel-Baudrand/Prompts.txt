@@ -232,3 +232,24 @@ RESPUESTA RECIBIDA (Incluye submit con preventDefault(), validación en tiempo r
 
 
 
+#[4] Etapa del proyecto: [Etapa 3] Fecha:Fecha:19-05-2026
+ ------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: [Le pedi que cambiara el logo] ------------------------------------------------------------
+RESPUESTA RECIBIDA (agrego el logo que le pedi) ----------------------------------------------------------
+-- USO EN EL PROYECTO: [utilice el codigo] ------------------------------------------------------
+------ REFLEXION PERSONAL: [fue medio util que te genere imagen la ia para crear un logo personalizado, aveces tiende a crear errores de rutas] 
+
+
+#[5] Etapa del proyecto: [Etapa 3] Fecha:19-05-2026
+ ------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: [le pedi que adaptara el sitio web a pantallas pequeñas ] ------------------------------------------------------------
+RESPUESTA RECIBIDA (Ahora en pantallas pequeñas:
+
+El menú se apila y los enlaces son más fáciles de tocar.
+El logo baja de tamaño.
+El hero ocupa menos altura y el texto se ajusta mejor.
+Las tarjetas quedan en una sola columna.
+Los botones ocupan el ancho completo.):  ----------------------------------------------------------
+-- USO EN EL PROYECTO: [utilice el codigo del prompt a medias porque en este caso no fue muy util] ------------------------------------------------------
+------ REFLEXION PERSONAL: [en este caso me desepciono un poco esperaba un poco más] 
+

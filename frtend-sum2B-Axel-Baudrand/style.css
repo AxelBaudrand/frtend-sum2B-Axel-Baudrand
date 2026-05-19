@@ -28,6 +28,7 @@ body {
     color: var(--text-main);
     font-family: var(--text-font);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 a {
@@ -53,10 +54,20 @@ a {
 }
 
 .logo {
+    align-items: center;
     color: var(--green-dark);
+    display: flex;
     font-family: var(--title-font);
     font-size: 1.8rem;
     font-weight: bold;
+    gap: 10px;
+}
+
+.logo img {
+    border-radius: 50%;
+    height: 54px;
+    object-fit: cover;
+    width: 54px;
 }
 
 .nav-list {
@@ -68,6 +79,7 @@ a {
 
 .nav-list a {
     color: var(--blue-dark);
+    display: inline-block;
     font-weight: 700;
     transition: color 0.3s ease;
 }
@@ -89,7 +101,7 @@ a {
 
 .hero {
     align-items: center;
-    background-image: linear-gradient(rgba(11, 57, 84, 0.68), rgba(15, 81, 50, 0.6)), url("https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=1600&q=80");
+    background-image: linear-gradient(rgba(11, 57, 84, 0.7), rgba(15, 81, 50, 0.55)), url("images/descarga.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -294,6 +306,25 @@ a {
     margin-bottom: 12px;
 }
 
+.footer-brand {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.footer-brand img {
+    background-color: var(--white);
+    border-radius: 50%;
+    height: 58px;
+    object-fit: cover;
+    width: 58px;
+}
+
+.footer-brand h2 {
+    margin-bottom: 0;
+}
+
 .footer p {
     color: #d8e9ef;
     margin-bottom: 8px;
@@ -347,11 +378,15 @@ a {
     .nav-list {
         align-items: stretch;
         flex-direction: column;
+        gap: 10px;
         width: 100%;
     }
 
     .nav-list a {
+        background-color: var(--off-white);
+        border-radius: 12px;
         display: block;
+        padding: 10px 12px;
     }
 
     .nav-register {
@@ -378,5 +413,74 @@ a {
     .card,
     .testimonial {
         padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding-bottom: 14px;
+        padding-top: 14px;
+    }
+
+    .logo {
+        font-size: 1.45rem;
+    }
+
+    .logo img {
+        height: 44px;
+        width: 44px;
+    }
+
+    .hero {
+        background-position: center top;
+        min-height: 430px;
+        padding-bottom: 52px;
+        padding-top: 52px;
+    }
+
+    .hero h1 {
+        font-size: 2.05rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 24px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        text-align: center;
+        width: 100%;
+    }
+
+    .section {
+        padding-bottom: 52px;
+        padding-top: 52px;
+    }
+
+    .section-heading {
+        margin-bottom: 28px;
+    }
+
+    .section-heading h2,
+    .store-banner h2 {
+        font-size: 1.8rem;
+    }
+
+    .card,
+    .testimonial {
+        border-radius: 14px;
+        padding: 20px;
+    }
+
+    .store-banner {
+        margin-bottom: 52px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .footer-brand img {
+        height: 48px;
+        width: 48px;
     }
 }

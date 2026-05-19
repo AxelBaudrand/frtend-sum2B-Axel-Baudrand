@@ -27,6 +27,7 @@ body {
     color: var(--texto);
     font-family: var(--fuente-textos);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 a {
@@ -49,10 +50,20 @@ a {
 }
 
 .logo {
+    align-items: center;
     color: var(--verde-oscuro);
+    display: flex;
     font-family: var(--fuente-titulos);
     font-size: 1.8rem;
     font-weight: bold;
+    gap: 10px;
+}
+
+.logo img {
+    border-radius: 50%;
+    height: 54px;
+    object-fit: cover;
+    width: 54px;
 }
 
 .enlace-inicio {
@@ -348,6 +359,13 @@ textarea:focus {
         padding: 22px 16px;
     }
 
+    .seccion-formulario > legend {
+        border-radius: 14px;
+        font-size: 1.1rem;
+        max-width: 100%;
+        white-space: normal;
+    }
+
     .dos-columnas {
         grid-template-columns: 1fr;
     }
@@ -363,5 +381,75 @@ textarea:focus {
 
     .boton {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .barra-navegacion {
+        padding-bottom: 14px;
+        padding-top: 14px;
+    }
+
+    .logo {
+        font-size: 1.45rem;
+    }
+
+    .logo img {
+        height: 44px;
+        width: 44px;
+    }
+
+    .enlace-inicio {
+        background-color: var(--fondo);
+        border-radius: 12px;
+        display: block;
+        padding: 10px 12px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .presentacion {
+        margin-bottom: 24px;
+    }
+
+    .presentacion h1 {
+        font-size: 1.9rem;
+    }
+
+    .presentacion p {
+        font-size: 0.98rem;
+    }
+
+    .formulario-registro {
+        gap: 22px;
+    }
+
+    .seccion-formulario {
+        box-shadow: 0 10px 24px rgba(11, 57, 84, 0.1);
+        padding: 20px 14px;
+    }
+
+    .grupo-campos {
+        gap: 16px;
+    }
+
+    input,
+    select,
+    textarea {
+        border-radius: 10px;
+        padding: 11px 12px;
+    }
+
+    .grupo-opciones {
+        padding: 14px 12px;
+    }
+
+    .pantalla-confirmacion {
+        border-radius: 14px;
+        padding: 26px 16px;
+    }
+
+    .pantalla-confirmacion h2 {
+        font-size: 1.65rem;
     }
 }
