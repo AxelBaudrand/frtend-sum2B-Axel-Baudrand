@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | VetCare</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="barra-navegacion">
+            <a href="index.html" class="logo">VetCare</a>
+            <a href="index.html" class="enlace-inicio">Volver al inicio</a>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <section class="presentacion">
+            <span>Registro de pacientes</span>
+            <h1>Crea la cuenta del dueño y su mascota</h1>
+            <p>Completa el formulario para recibir atencion veterinaria, recordatorios y beneficios de la tienda VetCare.</p>
+        </section>
+
+        <form class="formulario-registro" action="#" method="post">
+            <fieldset class="seccion-formulario">
+                <legend>Datos del Dueño</legend>
+
+                <div class="grupo-campos dos-columnas">
+                    <div class="campo">
+                        <label for="nombre-duenio">Nombre completo <span>*</span></label>
+                        <input type="text" id="nombre-duenio" name="nombre-duenio" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="fecha-nacimiento-duenio">Fecha de nacimiento <span>*</span></label>
+                        <input type="date" id="fecha-nacimiento-duenio" name="fecha-nacimiento-duenio" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="dni">DNI <span>*</span></label>
+                        <input type="text" id="dni" name="dni" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefono">Telefono <span>*</span></label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="correo">Correo electronico <span>*</span></label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="confirmar-correo">Confirmar correo electronico <span>*</span></label>
+                        <input type="email" id="confirmar-correo" name="confirmar-correo" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="contrasena">Contrasena <span>*</span></label>
+                        <input type="password" id="contrasena" name="contrasena" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="confirmar-contrasena">Confirmar contrasena <span>*</span></label>
+                        <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+                    </div>
+
+                    <div class="campo campo-completo">
+                        <label for="direccion">Direccion <span>*</span></label>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="localidad">Localidad <span>*</span></label>
+                        <input type="text" id="localidad" name="localidad" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="provincia">Provincia <span>*</span></label>
+                        <select id="provincia" name="provincia" required>
+                            <option value="">Selecciona una provincia</option>
+                            <option value="buenos-aires">Buenos Aires</option>
+                            <option value="catamarca">Catamarca</option>
+                            <option value="cordoba">Cordoba</option>
+                            <option value="corrientes">Corrientes</option>
+                            <option value="entre-rios">Entre Rios</option>
+                            <option value="mendoza">Mendoza</option>
+                            <option value="neuquen">Neuquen</option>
+                            <option value="rio-negro">Rio Negro</option>
+                            <option value="salta">Salta</option>
+                            <option value="santa-fe">Santa Fe</option>
+                            <option value="tucuman">Tucuman</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="seccion-formulario">
+                <legend>Datos de la Mascota</legend>
+
+                <div class="grupo-campos dos-columnas">
+                    <div class="campo">
+                        <label for="nombre-mascota">Nombre de la mascota <span>*</span></label>
+                        <input type="text" id="nombre-mascota" name="nombre-mascota" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="especie">Especie <span>*</span></label>
+                        <select id="especie" name="especie" required>
+                            <option value="">Selecciona una especie</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="ave">Ave</option>
+                            <option value="conejo">Conejo</option>
+                            <option value="reptil">Reptil</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="otra-especie">Otro</label>
+                        <input type="text" id="otra-especie" name="otra-especie" placeholder="Indica la especie">
+                    </div>
+
+                    <div class="campo">
+                        <label for="raza">Raza</label>
+                        <input type="text" id="raza" name="raza">
+                    </div>
+
+                    <fieldset class="grupo-opciones">
+                        <legend>Sexo <span>*</span></legend>
+                        <label for="sexo-macho">
+                            <input type="radio" id="sexo-macho" name="sexo" value="macho" required>
+                            Macho
+                        </label>
+                        <label for="sexo-hembra">
+                            <input type="radio" id="sexo-hembra" name="sexo" value="hembra">
+                            Hembra
+                        </label>
+                    </fieldset>
+
+                    <div class="campo">
+                        <label for="fecha-nacimiento-mascota">Fecha de nacimiento de la mascota</label>
+                        <input type="date" id="fecha-nacimiento-mascota" name="fecha-nacimiento-mascota">
+                    </div>
+
+                    <div class="campo campo-completo">
+                        <label for="descripcion-fisica">Color o descripcion fisica</label>
+                        <input type="text" id="descripcion-fisica" name="descripcion-fisica">
+                    </div>
+
+                    <fieldset class="grupo-opciones campo-completo">
+                        <legend>Informacion adicional</legend>
+                        <label for="castrada">
+                            <input type="checkbox" id="castrada" name="castrada">
+                            Mascota castrada o esterilizada
+                        </label>
+                        <label for="microchip">
+                            <input type="checkbox" id="microchip" name="microchip">
+                            Tiene microchip
+                        </label>
+                    </fieldset>
+
+                    <div class="campo">
+                        <label for="numero-microchip">Numero de microchip</label>
+                        <input type="text" id="numero-microchip" name="numero-microchip">
+                    </div>
+
+                    <div class="campo campo-completo">
+                        <label for="condiciones-medicas">Alergias o condiciones medicas</label>
+                        <textarea id="condiciones-medicas" name="condiciones-medicas" maxlength="250" rows="4" placeholder="Maximo 250 caracteres"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="seccion-formulario">
+                <legend>Preferencias de Atención</legend>
+
+                <div class="grupo-campos dos-columnas">
+                    <fieldset class="grupo-opciones campo-completo">
+                        <legend>Servicios de interes</legend>
+                        <label for="consulta-general">
+                            <input type="checkbox" id="consulta-general" name="servicios" value="consulta-general">
+                            Consulta general
+                        </label>
+                        <label for="vacunacion">
+                            <input type="checkbox" id="vacunacion" name="servicios" value="vacunacion">
+                            Vacunacion
+                        </label>
+                        <label for="cirugia">
+                            <input type="checkbox" id="cirugia" name="servicios" value="cirugia">
+                            Cirugia
+                        </label>
+                        <label for="grooming">
+                            <input type="checkbox" id="grooming" name="servicios" value="grooming">
+                            Grooming
+                        </label>
+                        <label for="internacion">
+                            <input type="checkbox" id="internacion" name="servicios" value="internacion">
+                            Internacion
+                        </label>
+                        <label for="tienda-online">
+                            <input type="checkbox" id="tienda-online" name="servicios" value="tienda-online">
+                            Tienda online
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="grupo-opciones">
+                        <legend>Turno preferido <span>*</span></legend>
+                        <label for="turno-manana">
+                            <input type="radio" id="turno-manana" name="turno-preferido" value="manana" required>
+                            Manana
+                        </label>
+                        <label for="turno-tarde">
+                            <input type="radio" id="turno-tarde" name="turno-preferido" value="tarde">
+                            Tarde
+                        </label>
+                        <label for="turno-indistinto">
+                            <input type="radio" id="turno-indistinto" name="turno-preferido" value="indistinto">
+                            Indistinto
+                        </label>
+                    </fieldset>
+
+                    <div class="campo">
+                        <label for="veterinario">Veterinario preferido</label>
+                        <select id="veterinario" name="veterinario">
+                            <option value="sin-preferencia">Sin preferencia</option>
+                            <option value="renata-soto">Dra. Renata Soto</option>
+                            <option value="matias-torres">Dr. Matias Torres</option>
+                            <option value="julieta-paz">Dra. Julieta Paz</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="frecuencia-visitas">Frecuencia estimada de visitas</label>
+                        <select id="frecuencia-visitas" name="frecuencia-visitas">
+                            <option value="">Selecciona una opcion</option>
+                            <option value="mensual">Mensual</option>
+                            <option value="trimestral">Cada 3 meses</option>
+                            <option value="semestral">Cada 6 meses</option>
+                            <option value="anual">Anual</option>
+                            <option value="solo-emergencias">Solo emergencias</option>
+                        </select>
+                    </div>
+
+                    <div class="campo campo-completo">
+                        <label for="como-nos-conocio">Como nos conocio</label>
+                        <select id="como-nos-conocio" name="como-nos-conocio">
+                            <option value="">Selecciona una opcion</option>
+                            <option value="redes-sociales">Redes sociales</option>
+                            <option value="google">Google</option>
+                            <option value="recomendacion">Recomendacion</option>
+                            <option value="cartel">Cartel o publicidad</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="seccion-formulario">
+                <legend>Confirmación</legend>
+
+                <div class="grupo-campos">
+                    <div class="campo">
+                        <label for="observaciones">Observaciones adicionales</label>
+                        <textarea id="observaciones" name="observaciones" maxlength="300" rows="4" placeholder="Maximo 300 caracteres"></textarea>
+                    </div>
+
+                    <fieldset class="grupo-opciones">
+                        <legend>Autorizaciones</legend>
+                        <label for="recordatorios">
+                            <input type="checkbox" id="recordatorios" name="recordatorios">
+                            Deseo recibir recordatorios por correo
+                        </label>
+                        <label for="terminos">
+                            <input type="checkbox" id="terminos" name="terminos" required>
+                            Acepto Terminos y Condiciones <span>*</span>
+                        </label>
+                        <label for="privacidad">
+                            <input type="checkbox" id="privacidad" name="privacidad" required>
+                            Acepto Politica de Privacidad <span>*</span>
+                        </label>
+                    </fieldset>
+                </div>
+            </fieldset>
+
+            <div class="acciones-formulario">
+                <button type="submit" class="boton boton-principal">Crear cuenta</button>
+                <button type="reset" class="boton boton-secundario">Limpiar</button>
+                <a href="index.html" class="boton boton-enlace">Volver al inicio</a>
+            </div>
+        </form>
+    </main>
+    <script src="validaciones.js"></script>
+</body>
+</html>
